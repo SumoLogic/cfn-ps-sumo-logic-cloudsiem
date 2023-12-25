@@ -74,7 +74,7 @@ def assume_role(role: str, role_session_name: str, account: str = None, session:
     role_arn = f"arn:{partition}:iam::{account}:role/{role}"
 
     response = sts_client.assume_role(RoleArn=role_arn, RoleSessionName=role_session_name)
-    logger.info(f"ASSUMED ROLE: {response['AssumedRoleUser']['Arn']}")
+    #logger.info(f"ASSUMED ROLE: {response['AssumedRoleUser']['Arn']}")
 
     return boto3.Session(
         aws_access_key_id=response["Credentials"]["AccessKeyId"],

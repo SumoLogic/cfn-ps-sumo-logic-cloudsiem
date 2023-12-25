@@ -24,7 +24,7 @@ Parameters:
     Description: "Amazon Kinesis Data Firehose (Kinesis Data Firehose) delivery stream Name"
     Default: "sumologic"
     AllowedPattern: "[a-zA-Z0-9._-]+"
-    MaxLength: 16
+    MaxLength: 36
 
   SumoLogicKinesisLogsURL:
     Type: String
