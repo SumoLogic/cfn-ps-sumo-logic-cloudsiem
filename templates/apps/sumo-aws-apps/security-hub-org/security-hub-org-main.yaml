@@ -536,3 +536,8 @@ Resources:
       DISABLE_SECURITY_HUB: 'false'
       HOME_REGION: !Ref AWS::Region
 
+Outputs:
+  ParentStackName:
+    Description: Name of parent Stack
+    Value: !Ref ParentStackName  
+

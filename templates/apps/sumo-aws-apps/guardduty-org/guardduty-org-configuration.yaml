@@ -464,6 +464,9 @@ Resources:
       SumoDeployment: !Ref SumoDeployment
 
 Outputs:
+  ParentStackName:
+    Description: Name of parent Stack
+    Value: !Ref ParentStackName
 
   SumoEndpoint:
     Description: GuardDuty HTTP Endpoint

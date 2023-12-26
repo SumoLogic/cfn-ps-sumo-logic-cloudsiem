@@ -829,3 +829,8 @@ Resources:
       SumoAccessID: !Ref SumoAccessID
       SumoAccessKey: !Ref SumoAccessKey
       SumoDeployment: !Ref SumoDeployment
+
+Outputs:
+  ParentStackName:
+    Description: Name of parent Stack
+    Value: !Ref ParentStackName
